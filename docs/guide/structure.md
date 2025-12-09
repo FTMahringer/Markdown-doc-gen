@@ -12,7 +12,7 @@ Learn how to organize your documentation files effectively.
 
 The documentation follows a simple file-based routing system:
 
-\`\`\`
+```
 docs/
 ├── index.md                 # Home page (/)
 ├── getting-started.md       # /docs/getting-started
@@ -23,19 +23,19 @@ docs/
 └── api/
     ├── configuration.md    # /docs/api/configuration
     └── reference.md        # /docs/api/reference
-\`\`\`
+```
 
 ## Frontmatter
 
 Each markdown file must include frontmatter at the top:
 
-\`\`\`yaml
+```yaml
 ---
 title: Page Title          # Required: Displayed in navigation and page header
 description: Description   # Optional: Meta description for SEO
 order: 1                   # Optional: Sort order in navigation (default: 999)
 ---
-\`\`\`
+```
 
 ## Navigation
 
@@ -56,7 +56,7 @@ The navigation sidebar is automatically generated from your file structure:
 
 ## Example
 
-\`\`\`
+```
 docs/
 ├── index.md              (order: 1)  → /docs/
 ├── introduction.md       (order: 2)  → /docs/introduction
@@ -66,4 +66,5 @@ docs/
 │   └── advanced.md      (order: 2)  → /docs/tutorials/advanced
 └── reference/
     └── api.md           (order: 20) → /docs/reference/api
-\`\`\`
+```
+

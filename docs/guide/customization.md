@@ -16,7 +16,7 @@ The documentation generator uses Tailwind CSS for styling. You can customize the
 
 Edit `app/globals.css` to change global styles:
 
-\`\`\`css
+```css
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -28,7 +28,7 @@ Edit `app/globals.css` to change global styles:
     --foreground: #ededed;
   }
 }
-\`\`\`
+```
 
 ### 2. Customizing Components
 
@@ -47,21 +47,21 @@ Extend the Tailwind configuration in `tailwind.config.js` to add custom colors, 
 
 Edit `components/Sidebar.tsx` to change the sidebar width:
 
-\`\`\`tsx
+```tsx
 <aside className="w-64 flex-shrink-0 ...">
   {/* Change w-64 to your preferred width */}
 </aside>
-\`\`\`
+```
 
 ### Modifying Content Width
 
 Edit `app/docs/[[...slug]]/page.tsx` to change the content width:
 
-\`\`\`tsx
+```tsx
 <article className="max-w-4xl mx-auto ...">
   {/* Change max-w-4xl to your preferred width */}
 </article>
-\`\`\`
+```
 
 ## Branding
 
@@ -69,31 +69,31 @@ Edit `app/docs/[[...slug]]/page.tsx` to change the content width:
 
 Update the site title in `components/Sidebar.tsx`:
 
-\`\`\`tsx
+```tsx
 <Link href="/" className="text-xl font-bold">
   Your Documentation Site
 </Link>
-\`\`\`
+```
 
 ### Metadata
 
 Update metadata in `app/layout.tsx`:
 
-\`\`\`tsx
+```tsx
 export const metadata: Metadata = {
   title: "Your Site Title",
   description: "Your site description",
 };
-\`\`\`
+```
 
 ## Code Highlighting Theme
 
 Change the syntax highlighting theme in `components/MarkdownRenderer.tsx`:
 
-\`\`\`tsx
+```tsx
 // Replace with your preferred highlight.js theme
 import 'highlight.js/styles/github-dark.css';
-\`\`\`
+```
 
 Available themes include:
 - `github-dark.css`
@@ -107,13 +107,13 @@ Available themes include:
 
 The markdown content uses the Tailwind Typography plugin with custom styling. You can modify the prose classes in `components/MarkdownRenderer.tsx`:
 
-\`\`\`tsx
+```tsx
 <div className="prose prose-slate dark:prose-invert max-w-none
   prose-headings:font-semibold
   prose-h1:text-4xl
   // ... add your custom classes
 ">
-\`\`\`
+```
 
 ## Advanced Customization
 
@@ -123,3 +123,4 @@ For more advanced customization:
 2. **Extend markdown parsing** - Add remark/rehype plugins in `components/MarkdownRenderer.tsx`
 3. **Custom layouts** - Create different layouts for different doc sections
 4. **Add features** - Implement search, table of contents, etc.
+

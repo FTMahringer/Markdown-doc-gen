@@ -8,7 +8,7 @@ export interface DocMetadata {
   title: string;
   description?: string;
   order?: number;
-  [key: string]: any;
+  [key: string]: string | number | boolean | undefined;
 }
 
 export interface DocFile {

@@ -10,14 +10,14 @@ This documentation generator supports GitHub Flavored Markdown (GFM) with additi
 
 ## Headings
 
-\`\`\`markdown
+```markdown
 # H1 Heading
 ## H2 Heading
 ### H3 Heading
 #### H4 Heading
 ##### H5 Heading
 ###### H6 Heading
-\`\`\`
+```
 
 ## Text Formatting
 
@@ -63,28 +63,28 @@ This documentation generator supports GitHub Flavored Markdown (GFM) with additi
 
 ### Inline Code
 
-Use backticks for \`inline code\` within text.
+Use backticks for `inline code` within text.
 
 ### Code Blocks
 
-\`\`\`javascript
+```javascript
 // JavaScript example
 function greet(name) {
-  console.log(\`Hello, \${name}!\`);
+  console.log(`Hello, ${name}!`);
 }
 
 greet('World');
-\`\`\`
+```
 
-\`\`\`python
+```python
 # Python example
 def greet(name):
     print(f"Hello, {name}!")
 
 greet("World")
-\`\`\`
+```
 
-\`\`\`typescript
+```typescript
 // TypeScript example
 interface User {
   name: string;
@@ -95,7 +95,7 @@ const user: User = {
   name: "John",
   age: 30
 };
-\`\`\`
+```
 
 ## Blockquotes
 
@@ -136,3 +136,4 @@ You can also use <strong>inline HTML</strong> when needed.
 <div style="padding: 1rem; background: #f0f0f0; border-radius: 0.5rem;">
   Custom HTML blocks are supported too!
 </div>
+

@@ -24,20 +24,20 @@ Welcome to the **Markdown Documentation Generator** built with Next.js 16! This 
 
 Create markdown files in the `docs/` directory:
 
-\`\`\`bash
+```bash
 docs/
   index.md          # Home page
   getting-started.md # Getting started guide
   guide/
     installation.md  # Installation guide
     usage.md        # Usage guide
-\`\`\`
+```
 
 ### 2. Add Frontmatter
 
 Each markdown file should have frontmatter metadata:
 
-\`\`\`markdown
+```markdown
 ---
 title: Your Page Title
 description: A brief description
@@ -45,19 +45,20 @@ order: 1
 ---
 
 # Your Content Here
-\`\`\`
+```
 
 ### 3. Build and Deploy
 
 Build your documentation site:
 
-\`\`\`bash
+```bash
 npm run build
 npm start
-\`\`\`
+```
 
 ## Next Steps
 
 - Learn how to [organize your documentation](/docs/guide/structure)
 - Explore [markdown features](/docs/guide/markdown-features)
 - Customize the [appearance](/docs/guide/customization)
+
